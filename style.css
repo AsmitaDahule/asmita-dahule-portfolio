@@ -662,3 +662,89 @@ nav {
     display: block;
   }
 }
+
+
+
+/* ===== Resume Section ===== */
+.resume-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.section-subtitle {
+  color: var(--text-color);
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.btn-resume {
+  display: inline-block;
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.btn-resume:hover {
+  background-color: var(--primary-color);
+}
+
+/* ===== Education Section ===== */
+#education {
+  padding: 70px 20px;
+}
+
+.education-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.education-card {
+  background-color: var(--surface-color);
+  border-radius: 20px;
+  box-shadow: 0 4px 15px var(--shadow-color);
+  padding: 25px;
+  text-align: center;
+  color: var(--text-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 25px var(--shadow-color);
+}
+
+.edu-icon {
+  font-size: 2.8rem;
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+
+.education-card h3 {
+  color: var(--heading-color);
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.education-card p {
+  font-size: 0.95rem;
+  margin: 4px 0;
+  line-height: 1.5;
+}
+
+.year {
+  color: var(--accent-color);
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .education-cards {
+    grid-template-columns: 1fr;
+  }
+}
